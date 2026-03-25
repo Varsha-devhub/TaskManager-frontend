@@ -55,7 +55,7 @@ function Dashboard() {
           }
         )
         
-        setTasks(res.data.tasks || []);
+        setTasks(res.data || []);
       }catch(error){
         console.error(error);
       }
