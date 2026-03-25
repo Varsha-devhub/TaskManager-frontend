@@ -1,0 +1,32 @@
+.error-message{
+    colour:#ff4d4f;
+    background:rgba(255,77,79,0.1);
+    border: 1px solid #ff4d4f;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.password-wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.password-wrapper input{
+    width: 100%;
+    padding-right: 40px;
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    font-size: 18px;
+}
+.eye-icon:hover{
+    color: white;
+}

@@ -1,0 +1,30 @@
+.navbar{
+    background: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    color: white;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.navbar a.active{
+    color: yellow;
+}
+
+.nav-right{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+.user-email {
+  font-size: 14px;
+   opacity: 0.8; 
+   color: white;
+  
+}
