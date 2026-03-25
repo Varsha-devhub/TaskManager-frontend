@@ -6,7 +6,7 @@ import axios from "axios";
 
 import "./Dashboard.css"
 import Sidebar from "../components/Sidebar";
-import Topbar from "../components/topbar";
+import Topbar from "../components/Topbar";
 import { FaTasks } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
