@@ -44,7 +44,7 @@ VITE_API_URL=https://auth-backend-3kx0.onrender.com
 ## 📦 Installation
 
 
-git clone https://github.com/your-username/TaskManager-frontend.git
+git clone https://github.com/Varsha_devhub/TaskManager-frontend.git
 cd TaskManager-frontend
 npm install
 npm run dev
