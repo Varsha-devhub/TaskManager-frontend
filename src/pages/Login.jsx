@@ -78,15 +78,15 @@ const handleSubmit= async(e)=>{
    try{
     
       const response=await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`,formData);
-      
+      console.log("success :",response)
       login(response.data.token);
       
       navigate("/dashboard");
     }catch(error){
       
-
-    if(error.response?.status===401 ){
-      setServerError("Invalid email or password")
+const serverMessage=error.response?.data?.message;
+    if(serverMessage ){
+      setServerError(serverMessage)
     }else{
       setServerError("Something went wrong .Try again.")
     }
@@ -163,6 +163,11 @@ return (
         {touched.password && errors.password && (
               <p className="text-red-500 text-sm mt-1 mb-3">{errors.password}</p>
 )}
+{serverError && (
+          <p className="text-red-400 text-sm mb-3 text-center">
+            {serverError}
+          </p>
+        )}
         <button className="w-full bg-gradient-to-br from-black-400 to-gray-400 
         hover:from-blue-500 hover:to-green-500 
         text-white p-2 rounded-lg font-semibold py-3
@@ -219,11 +224,7 @@ return (
             {message}
           </p>
         )}
-        {serverError && (
-          <p className="text-red-400 text-sm mb-3 text-center">
-            {serverError}
-          </p>
-        )}
+        
 
           </div>
 

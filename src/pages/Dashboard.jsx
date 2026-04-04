@@ -167,16 +167,19 @@ function Dashboard() {
   )
  }
   return (
-    <div className=" min-h-screen flex  bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+    <div className=" min-h-screen flex flex-col md:flex-row 
+    bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+      <div className="hidden md:block w-64">
       <Sidebar/>
-      <div className="flex-1 p-8 max-w-6xl mx-auto" >
+      </div>
+      <div className="flex-1 w-full max-w-screen-lg mx-auto p-4 md:p-6" >
     
       <h2 className="text-white text-3xl font-bold mb-4">Dashboard</h2>
       
       <div >
          <Topbar user={user} search={search} setSearch={setSearch} tasks={tasks}/>
          </div>
-       <div className="grid grid-cols-4 gap-8 mt-8 ">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-8 ">
           <div className="bg-black/40 p-6 rounded-xl text-white border border-white/10
                           backdrop-blur-md flex items-center justify-between shadow-lg
                           hover:bg-black/50 transition-all duration-300 hover:-translate-y-1">
@@ -242,7 +245,7 @@ function Dashboard() {
 
       <div className="mt-8 bg-black/40 backdrop-blur-sm p-6 rounded-xl">
       <h3 className="text-white text-xl mb-4">Add New Task</h3>
-      <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         <input
               ref={inputRef}
                type="text"
@@ -307,7 +310,7 @@ function Dashboard() {
                     />
                   ):(
 
-                  <span className="text-white whitespace-nowrap">{task.title}</span>
+                  <span className="text-white break-words">{task.title}</span>
                 )}
 
               </div>
