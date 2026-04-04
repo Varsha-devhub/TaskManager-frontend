@@ -167,8 +167,10 @@ function Dashboard() {
   )
  }
   return (
-    <div className=" min-h-screen flex flex-col md:flex-row 
+   
+    <div className=" min-h-screen flex flex-col md:flex-row  
     bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+      
       <div className="hidden md:block w-64">
       <Sidebar/>
       </div>
@@ -278,9 +280,9 @@ function Dashboard() {
             <div
             key={task._id}
             className="bg-black/30 p-4 rounded-lg mb-3 
-                      flex items-center justify-between gap-4 text-white"
+                      flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-white"
             >
-              <div className="flex items-center gap-4 ">
+              <div className="flex items-start sm:items-center gap-3 w-full">
                 <button
                 onClick={()=>toggleTaskStatus(task)}
                 className={`w-6 h-6 rounded-full border-2 
@@ -310,11 +312,11 @@ function Dashboard() {
                     />
                   ):(
 
-                  <span className="text-white break-words">{task.title}</span>
+                  <span className="text-white break-words max-w-[200px] sm:max-w-none">{task.title}</span>
                 )}
 
               </div>
-              <div className="flex items-center gap-5 ">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-5 ">
                 <span className="text-xs text-gray-400 w-16 text-center">{formatDate(task.createdAt)}</span>
                 {task.completed?(
                   <span className="text-xs bg-emerald-400/20 text-emerald-400 px-3 py-1 rounded-full min-w-[90px] text-center">
@@ -347,7 +349,11 @@ function Dashboard() {
       </div>
       
     </div>
+    
+
+    
       </div>
+      
   )
 }
 
