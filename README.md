@@ -20,7 +20,7 @@ A full-stack task management application with secure authentication, email-based
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 ### Frontend:
 - React.js
 - JavaScript (ES6+)
@@ -44,33 +44,54 @@ A full-stack task management application with secure authentication, email-based
 - Git & GitHub
 
 ---
-## 🔐 Authentication Flow
-
+##  Authentication Flow
 - User registers with email & password  
 - Password is securely hashed using bcrypt  
 - JWT token is generated on login  
 - Protected routes require valid token  
 - Password reset uses token-based email verification  
 
----  
+--- 
 
-## ⚙️ Environment Variables
+## What I Learned
+  Handling real-world deployment issues (API routing, env configs)
+  Debugging frontend-backend integration
+  Managing async operations and error states in React
+  Secure authentication flow using JWT
+
+--- 
+
+## Challenges Faced
+  Fixing API connection issues after deployment
+  Managing environment variables in production
+  Handling email service failures
+  Ensuring secure authentication flow
+
+--- 
+
+##  Environment Variables
 
 Create a .env file:
 VITE_API_URL=https://auth-backend-3kx0.onrender.com
 
-## 📦 Installation
+--- 
+
+##  Installation
 
 git clone https://github.com/Varsha_devhub/TaskManager-frontend.git
 cd TaskManager-frontend
 npm install
 npm run dev
 
+--- 
+
 ## 🌐 Backend API
 
 This frontend connects to:
 
 👉 https://auth-backend-3kx0.onrender.com
+
+--- 
 
 ## 📸 Screenshots
 
@@ -82,14 +103,8 @@ This frontend connects to:
 
 ### Reset Password
 ![Reset](./screenshots/reset.png)
-### Login Page
-![Login](./screenshots/login.png)
 
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
-
-### Reset Password
-![Reset](./screenshots/reset.png)
+--- 
 
 ## 👨‍💻 Author
 
