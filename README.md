@@ -54,19 +54,21 @@ A full-stack task management application with secure authentication, email-based
 --- 
 
 ## What I Learned
-  Handling real-world deployment issues (API routing, env configs)
-  Debugging frontend-backend integration
-  Managing async operations and error states in React
-  Secure authentication flow using JWT
 
---- 
+- Handling real-world deployment issues (API routing, env configs) 
+-  Debugging frontend-backend integration
+-  Managing async operations and error states in React
+-  Secure authentication flow using JWT
+
+ --- 
 
 ## Challenges Faced
-  Fixing API connection issues after deployment
-  Managing environment variables in production
-  Handling email service failures
-  Ensuring secure authentication flow
 
+- Fixing API connection issues after deployment
+- Managing environment variables in production
+- Handling email service failures
+- Ensuring secure authentication flow
+   
 --- 
 
 ##  Environment Variables
